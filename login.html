@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用户登录</title>
+    <style>
+        .login-container {
+            width: 300px;
+            padding: 16px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form action="login.php" method="post">
+            <label for="uname"><b>用户名</b></label>
+            <input type="text" placeholder="请输入用户名" name="uname" id="uname" required>
+
+            <label for="psw"><b>密码</b></label>
+            <input type="password" placeholder="请输入密码" name="psw" id="psw" required>
+
+            <button type="submit">登录</button>
+        </form>
+    </div>
+</body>
+</html>

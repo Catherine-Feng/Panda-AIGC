@@ -1,0 +1,42 @@
+
+    .container {
+        
+        margin: auto; /* 水平居中 */
+        background: #f8f9fa; /* 轻微的背景色 */
+        padding: 20px; /* 内边距 */
+        border-radius: 8px; /* 圆角边框 */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 盒子阴影 */
+    }
+
+    .form-group {
+        margin-bottom: 15px; /* 间距 */
+    }
+
+    label {
+        font-weight: bold; /* 加粗标签文字 */
+    }
+
+    .form-control, .form-control-file {
+        border: 1px solid #ced4da; /* 输入框边框 */
+    }
+
+    .btn-primary {
+        width: 100%; /* 按钮宽度 */
+        padding: 10px; /* 按钮内边距 */
+    }
+
+    /* 响应式调整 */
+    @media (max-width: 576px) {
+        .container {
+            padding: 10px; /* 小屏幕减少内边距 */
+        }
+    }
+
+      .container {
+        
+        margin-top: 50px;
+    }
+    .table {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+ 

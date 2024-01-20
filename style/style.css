@@ -1,0 +1,105 @@
+
+   #container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 90%;
+            overflow: auto;
+        }
+.item {
+    width: 23%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+/* 小屏幕（一行两个） */
+@media (max-width: 768px) {
+    .item {
+        width: 48%; /* 一行两个 */
+        margin: 1%; /* 添加一些边距 */
+    }
+}
+
+/* 更小屏幕（一行一个） */
+@media (max-width: 480px) {
+    .item {
+        width: 96%; /* 一行一个 */
+        margin: 2%; /* 添加一些边距 */
+    }
+}
+
+        .item img {
+            width: 100%;
+            border-radius: 3px;
+        }
+        .item h3 {
+            text-align: center;
+            color: #333;
+            font-size: 16px;
+            padding: 10px 0;
+        }
+
+        /* 第一行的样式保持不变 */
+
+/* 第二行分类条的样式 */
+.navbar-nav {
+    flex-direction: row !important; /* 强制使用行方向 */
+}
+.category-bar {
+    background-color: #2c3e50; /* 调整背景颜色 */
+    text-align: center;
+}
+
+.category-bar .nav {
+    padding-left: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* 允许内容换行 */
+    justify-content: center;
+}
+
+.category-bar .nav > li {
+    display: inline-block; /* 以内联块的形式显示 */
+    margin: 5px; /* 调整间距 */
+    width: calc(12.5% - 10px); /* 计算宽度（8个分类，每个12.5%） */
+}
+
+.category-bar .nav > li > a {
+    color: #ecf0f1; /* 链接颜色 */
+    padding: 5px 10px; /* 内边距 */
+}
+
+@media (max-width: 768px) {
+    .category-bar .nav > li {
+        width: calc(50% - 10px); /* 在小屏幕上每个元素占一半宽度 */
+    }
+}
+
+/* 注册和登录按钮的通用样式 */
+.navbar-nav.navbar-right > li > a {
+    color: #fff; /* 文字颜色 */
+    background-color: #5cb85c; /* 背景颜色 */
+    border-radius: 4px; /* 圆角边框 */
+    margin: 5px 10px; /* 上下边距和左右边距 */
+    padding: 5px 15px; /* 内边距 */
+    transition: background-color 0.3s; /* 平滑背景色过渡 */
+}
+
+/* 鼠标悬浮时的样式 */
+.navbar-nav.navbar-right > li > a:hover,
+.navbar-nav.navbar-right > li > a:focus {
+    background-color: #449d44; /* 鼠标悬浮时的背景色 */
+    color: #fff; /* 鼠标悬浮时的文字颜色 */
+    text-decoration: none; /* 去除下划线 */
+}
+
+/* 特定样式 */
+.navbar-nav.navbar-right > li > a > .glyphicon {
+    margin-right: 5px; /* 图标和文字之间的间距 */
+}
